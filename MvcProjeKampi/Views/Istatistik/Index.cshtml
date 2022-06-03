@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<h2>İstatistik Sayfası</h2>
+<br />
+<div class="row">
+    <div class="col-md-4 col-sm-6 col-12">
+        <div class="info-box bg-info">
+            <div class="info-box-content">
+                <span class="info-box-text">Toplam Kategori Sayısı</span>
+                <span class="info-box-number">@ViewBag.CategoryCount</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12">
+        <div class="info-box bg-gradient-danger">
+            <div class="info-box-content">
+                <span class="info-box-text">Yazılım Kategorisi Başlık Sayısı</span>
+                <span class="info-box-number">@ViewBag.HeadingCountCategoryID</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12">
+        <div class="info-box bg-gradient-success">
+            <div class="info-box-content">
+                <span class="info-box-text">İsminde A Harfi Bulunan Yazar Sayısı</span>
+                <span class="info-box-number">@ViewBag.WriterCountCharA</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12">
+        <div class="info-box bg-gradient-pink">
+            <div class="info-box-content">
+                <span class="info-box-text">En Fazla Başlık Olan Kategori Adı</span>
+                <span class="info-box-number">@ViewBag.MaxHeadingCategoryName</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-12">
+        <div class="info-box bg-gradient-purple">
+            <div class="info-box-content">
+                <span class="info-box-text">Kategorilerin Kategori Duruma(True/False) Göre Farkı</span>
+                <span class="info-box-number">@ViewBag.DiffCategoryStatus</span>
+            </div>
+        </div>
+    </div>
+</div>
+
